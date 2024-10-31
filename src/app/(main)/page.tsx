@@ -24,7 +24,7 @@ export default function Page() {
         } else {
             // Загружаем данные пользователя
             ApiService.initialize(userId).then(() => {
-                setBalance(ApiService.userInfo?.balance;
+                setBalance(ApiService.userInfo?.balance);
                 setEnergy(4471); // Пример значения, его также можно подгружать из API
             });
         }
